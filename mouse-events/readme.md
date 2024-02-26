@@ -1,5 +1,42 @@
 # Mouse position finding and Showing the Date which the mouse is clicked.
 
+## HTML CODE
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Events</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        background-color: azure;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="time">Time:</h1>
+    <h1 id="x-axis">X-Axis:</h1>
+    <h1 id="y-axis">Y-Axis:</h1>
+    <script src="./index.js"></script>
+  </body>
+</html>
+```
+
+<br/>
+<br/>
+<br/>
+## JAVASCRIPT CODE
+
 ## Events Listener
 
 - In here i will used the addEventListener to get the mouse events
