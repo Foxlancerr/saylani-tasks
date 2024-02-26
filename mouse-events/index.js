@@ -17,11 +17,20 @@ body.addEventListener("click", (e) => {
 function getCurrentDate() {
   let date = new Date();
 
-  time.textContent =
-    "Time:" +
-    date.getHours() +
-    ":" +
-    date.getMinutes() +
-    ":" +
-    date.getSeconds();
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  let second = date.getSeconds();
+
+  if (hour == 12) {
+    hour = 1;
+    hour = "0" + hour;
+  }
+  if (minute < 10) {
+    minute = "0" + minute;
+  }
+  if (second < 10) {
+    second = "0" + second;
+  }
+
+  time.textContent = "Time:" + hour + ":" + minute + ":" + second;
 }
