@@ -4,7 +4,7 @@ let x_value = document.querySelector("#x-axis");
 let y_value = document.querySelector("#y-axis");
 
 body.addEventListener("click", (e) => {
-  console.log(e.clientX, e.clientY);
+  console.log(e, e.clientY);
   getCurrentDate();
 
   console.log(x_value);
