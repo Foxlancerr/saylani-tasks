@@ -11,7 +11,7 @@ body.addEventListener("click", (e) => {
   console.log(y_value);
 
   x_value.innerText = "X-Axis:" + e.clientX;
-  y_value.innerText = "X-Axis:" + e.clientY;
+  y_value.innerText = "Y-Axis:" + e.clientY;
 });
 
 function getCurrentDate() {
